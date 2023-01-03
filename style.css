@@ -1,0 +1,617 @@
+*{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Libre Baskerville", serif;
+    margin: 0;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+h2{
+    text-align: center;
+}
+
+h1, h2{
+    font-family: "Fjalla One", serif;
+}
+
+button:active, button:focus{
+    outline: none;
+}
+
+nav{
+    position: fixed;
+    z-index: 2;
+    background-color: #D65043;
+    color: black;
+    height: 100%;
+    padding: 6% 1em 0em 0em;
+    display: none;
+    transition: display 1s ease-in;
+    font-family: 'Roboto', sans-serif;
+}
+
+.open-nav{
+    display: block;
+    background-color: transparent;
+    border: none;
+    font-size: 2.5em;
+    color: black;;
+    position: fixed;
+    left: 0;
+    top: 0;
+    margin: 1%;
+    z-index: 3;
+    width: 1em;
+    height: 1em;
+}
+
+.open-nav:active, .open-nav:focus{
+    outline: none;
+    border: none;
+}
+
+nav a{
+    color: black;
+    font-size: 1.1rem;
+    transition: color 0.2s ease-in-out;
+}
+
+nav a:hover{
+    color:  #D5D2CD;
+    transition: color 0.2s ease-in-out;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav li{
+    display: block;
+    margin: 0.5em;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+nav li::selection, nav a::selection{
+    background-color: transparent;
+}
+
+.nav-socials i{
+    font-size: 1.8rem;
+    margin: 1rem 1rem 0rem 0rem;
+}
+
+.home-div{
+    background-color: #eae5e2;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.slogan-div{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5% 2% 5% 5%;
+}
+
+.slogan-div h1{
+    font-size: 4em;
+    color: #D65043;
+    max-width: 75%;
+}
+
+.slogan-div h1::selection{
+    background-color: transparent;
+}
+
+.slogan-div h1:hover{
+    cursor: default;
+}
+
+.slogan-div h5::selection{
+    background-color: #ba6f68;
+    color: #eae5e2;
+}
+
+.home-mission-div{
+    width: 40%;
+    margin: 4% 4% 4% 3%;
+    padding: 2%;
+    background-color: #22211F;
+    color: white;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 0.2em;
+}
+
+.home-mission-div button{
+    border: none;
+    display: inline-block;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    padding: 2%;
+    background-color: #D65043;
+    border-radius: 0.4em;
+    transition: ease-in 0.2s;
+}
+
+.home-mission-div button:hover{
+    background-color: #b04339;
+    cursor: pointer;
+    transition: ease-in 0.2s;
+}
+
+.home-mission-div a::selection{
+    background-color: transparent;
+}
+
+.home-mission-div a{
+    color: rgb(239, 229, 229);
+    font-family: "Oswald", serif;
+}
+
+.home-mission-div h2{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3em;
+}
+
+.home-mission-div h2:hover{
+    cursor: default;
+}
+
+.home-mission-div h2::selection{
+    background-color: transparent;
+}
+
+.home-mission-div p{
+    width: 95%;
+    font-size: 1em;
+    text-indent: 5%;
+}
+
+.home-mission-div p::selection{
+    background-color:#ba6f68;
+}
+
+.updates-div{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+}
+
+.updates-container{
+    width: 50%;
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 3%;
+}
+
+.updates-container button{
+    border: none;
+    display: inline-block;
+    padding: 1.5%;
+    background-color: #b04339;
+    font-size: 1.4em;
+    color: whitesmoke;
+    border-radius: 0.8rem;
+    transition: ease-in-out 0.3s;
+    font-family: Oswald, sans-serif;
+    text-transform: uppercase;
+}
+
+.updates-redirect-btn:hover{
+    background-color: #ba6f68;
+    transition: ease-in-out 0.3s;
+}
+
+.updates-subcontainer{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 85%;
+    align-items: center;
+}
+
+.updates-subcontainer h2{
+    margin: auto;
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+
+.updates-subcontainer h2:hover, .news-caption a:hover, .news-caption p:hover{
+    cursor: default;
+}
+
+.news-controller, .events-controller{
+    position: absolute; 
+    right: 1%;
+}
+
+.news-controller button, .events-controller button{
+    background-color: transparent;
+}
+
+#news-slider, #events-slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.news-container, .events-container{
+    width: 95%;
+    margin: auto;
+    margin-bottom: 6%;
+}
+
+.news-subcontainer, .events-subcontainer{
+    margin: auto;
+}
+
+.news-controller, .events-controller{
+    display: flex;
+    justify-content: space-between;
+}
+
+#news-controls i, #events-controls i{
+    color: black;
+    font-size: 1rem;
+}
+
+.news-previous, .news-next, .events-previous, .events-next{
+    padding: 2px;
+    width: 30px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.news-img, .events-img{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.news-img img, .events-img img{
+    max-width: 80%;
+    transition: max-width 0.5s ease-in-out;
+}
+
+.news-slide:hover .news-img img, .events-slide:hover .events-img img{
+    max-width: 90%;
+    transition: max-width 0.5s ease-in-out;
+}
+
+.news-caption, .events-caption{
+    padding: 0.5em 0em;
+}
+
+.news-caption h3, .events-caption h3{
+    text-align: center;
+    font-family: "Fjalla One", sans-serif;
+    margin-top: 5%;
+}
+
+.news-caption a, .events-caption a{
+    color: black;
+}
+
+.news-caption p, .events-caption p{
+    max-width: 80%;
+    margin: auto;
+}
+
+.updates-subcontainer h2:hover, .updates-subcontainer a:hover, updates-subcontainer p:hover{
+    cursor: default;
+}
+
+.updates-subcontainer h2::selection, .updates-subcontainer a::selection, updates-subcontainer p::selection{
+    background-color: transparent;
+}
+
+.issues-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+    margin: 5% 0%;
+}
+
+.issues-container h2{
+    font-size: 5rem;
+}
+
+.issues-dropdown{
+    background-color: whitesmoke;
+    width: 70%;
+    text-align: center;
+    padding: 2% 0%;
+    margin: 1%;
+    position: relative;
+    border-radius: 1rem;
+    box-shadow: 0 3px 3px -2px rgb(0 0 0 / 10%), 0 3px 4px 0 rgb(0 0 0 / 14%), 0 1px 8px 0 rgb(0 0 0 / 12%);
+    transition: width 0.2s ease-in-out;
+}
+
+.issues-dropdown:hover{
+    width: 71%;
+    transition: width 0.2s ease-in-out;
+}
+
+.issues-dropdown h3{
+    display: inline;
+    font-size: 2em;
+    font-family: "Merriweather";
+}
+
+.issues-dropdown-btn{
+    border: none;
+    font-size: 2em;
+    background-color: whitesmoke;
+    position: absolute;
+    right: 0;
+    margin-right: 0.5em;
+}
+
+.issues-dropdown-btn:active {
+    outline: none;
+}
+
+.issues-dropdown-content{
+    display: none;
+    padding: 2%;
+    transition: display 0.5s ease-in-out;
+}
+
+.issues-dropdown-content p{
+    max-width: 80%;
+    margin: auto;
+    padding: 3%;
+}
+
+.issues-dropdown-content p::selection{
+    background-color: transparent;
+
+}
+
+.issues-dropdown-content p:hover{
+    cursor: default;
+}
+
+#issues-close-btn-1, #issues-close-btn-2, #issues-close-btn-3{
+    display: none;
+}
+
+.issues-redirect-btn{
+    border: none;
+    display: inline-block;
+    padding: 0.85%;
+    background-color: #D65043;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-family: "Oswald", sans-serif;
+    border-radius: 0.8rem;
+    transition: padding 0.5s ease-in-out;
+}
+
+.issues-redirect-btn a{
+    color: whitesmoke;
+}
+
+.dark-red{
+    background-color: #c46860;
+    color: #f4ede8;
+}
+
+.dark-red .issues-redirect-btn{
+    background-color: #992a1f;
+}
+
+.mid-red{
+    background-color: #ce9680;
+    color: #f4ede8;
+}
+
+.mid-red .issues-redirect-btn{
+    background-color: #ce744e; 
+}
+
+.light-red{
+    background-color: #e2bda7;
+    color: #7a6a6a;
+}
+
+.light-red .issues-redirect-btn{
+    background-color: #bb7e58; 
+}
+
+.issues-redirect-btn:hover{
+    padding: 1%;
+    transition: padding 0.5s ease-in-out;
+}
+
+.involved-div{
+    margin: 2rem 0rem 0rem 0rem;
+    padding: 6rem 0rem 5rem 0rem;
+    position: relative;
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+    background-color: #eae5e2;
+}
+
+.involved-div h2{
+    font-size: 5rem;
+}
+
+.involved-div a{
+    color: whitesmoke;
+}
+
+.involved-redirect{
+    text-align: center;
+}
+
+.involved-redirect a{
+    color: #D65043;
+    font-size: 3rem;
+    margin: 0 11% 3% 11%;
+    transition: color 0.2s ease-in-out;
+    font-family: "Fjalla One", sans-serif;
+}
+
+.involved-redirect a:hover{
+    color: #ba6f68;
+    transition: color 0.2s ease-in-out;
+}
+
+.involved-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+}
+
+.involved-item{
+    max-width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 0 4rem 10rem 4rem; 
+}
+
+.involved-item img{
+    width: 75%;
+}
+
+.involved-item h3{
+    font-size: 4rem;
+}
+
+.involved-item button{
+    border: none;
+    display: inline-block;
+    padding: 2%;
+    background-color: #b04339;
+    font-size: 1.5rem;
+    color: whitesmoke;
+    border-radius: 0.8rem;
+    transition: ease-in-out 0.3s;
+    font-family: Oswald, sans-serif;
+    text-transform: uppercase;
+}
+
+.involved-item button:hover{
+    background-color: #ba6f68;
+    transition: ease-in-out 0.3s;
+}
+
+.left-item, .right-item{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-item{
+    flex-direction: column;
+}
+
+.title-div{
+    font-family: "Fjalla One", sans-serif;
+    text-align: center;
+}
+
+.desc-div{
+    max-width: 80%;
+    text-align: center;
+    font-family: "Merriweather", serif;
+    font-size: 1.25rem;
+}
+
+.desc-div p{
+    padding-bottom: 0.5rem;
+}
+
+.support-us img, .join-us img{
+    width: 70%;
+}
+
+.socials i{
+    font-size: 3rem;
+}
+
+.socials a{
+    color: #b04339;
+    transition: color 1s ease-in-out;
+    padding: 0 0.75rem;
+}
+
+.socials a:hover{
+    color: #ba6f68;
+    transition: color 0.5s ease-in-out;
+}
+
+footer{
+    background-color: black;
+    height: 100%;
+}
+
+footer ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+footer a{
+   color: whitesmoke;
+   font-family: 'Roboto', sans-serif;
+}
+
+footer li{
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+.footer-container{
+    padding: 3% 2%;
+    display: flex;
+    justify-content: right;
+    font-weight: normal;
+}
+
+.footer-container div{
+    padding: 0% 3%;
+}
+
+.footer-container h5{
+    font-weight: bold;
+    color: whitesmoke;
+    font-family: "Oswald", sans-serif;
+    font-weight: bold;
+}
+
+.footer-container a:hover{
+    text-decoration: underline;
+    color: #eae5e2;
+}
+
+.tns-horizontal.tns-subpixel {
+    white-space: normal;
+}
