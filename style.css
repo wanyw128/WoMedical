@@ -623,6 +623,8 @@ footer li{
     height: 80px; 
     display: #eae5e2; 
     background-color: #eae5e2; 
+    position: fixed; 
+    z-index: 500; 
 }
 
 .sub-title {
@@ -638,7 +640,7 @@ footer li{
 
 .time-line-box {
     height: 100px; 
-    padding: 45px 0;
+    padding: 120px 0;
     width: 100%;
     background-color: #ffffff;
   }
@@ -727,18 +729,31 @@ footer li{
 
 .picture-one {
     align-items: center;
-    max-width: 100%; 
-    height: auto; 
+    padding-top: 1rem; 
+    width: 3rem; 
+    display: inline-block; 
 }
 
-.picture-two {
-    max-width: 100%; 
+.second-event {
+    padding-left: 3rem; 
+    width: 100%; 
     height: auto; 
-    margin-bottom: 1rem; 
+    max-width: 500px; 
 }
 
-.picture-three {
-    max-width: 100%; 
+.third-event {
+    align-items: center; 
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.picture-one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40rem;
     height: auto;
 }
 
