@@ -20,9 +20,9 @@
   <body> 
     <div class="header"> 
       <heading>
-        <button class="open-nav" onclick="toggleNav()"><i class="fa-solid fa-bars"></i></button>
+        <button id="testt" class="open-nav" onclick="toggleNav()"><i class="fa-solid fa-bars"></i></button>
       </heading>
-      <div class="sub-title"> Event Archive </div>
+      <div id="testtt" class="sub-title"> Event Archive </div>
     </div>
     <section class="time-line-box">
       <div class="swiper-container text-center"> 
@@ -64,23 +64,33 @@
                 <div class="status"><span>Work</span></div>
               </div>
           </div>
-          <div class="swiper-pagination"></div>
+          <div id="tester">
+            <h4 id="testttt">N/A</h4>
+            <img id="test" src="assets/ugh.png" alt="">
+            <section class="background">
+              <h4 id="testttt">N/A</h4>
+                <section class="slider"> 
+                   <ul class="sliderContainer" id="slides-container">
+                      <li class="slide"><img src="/images/img2.jpeg"></li>
+                      <li class="slide"><img src="/images/image1.jpg"></li>
+                      <li class="slide"><img src="image1.jpg"></li>
+                      <li class="slide"><img src="image1.jpg"></li>
+                    </ul>
+                <button class="slide-arrow"  id="slide-arrow-left"></button>
+                <button class="slide-arrow"  id="slide-arrow-right"></button>
+                    <div class="expand">
+                      <img src="assets/ugh.png" alt="">
+                    </div>
+            </section>
+
+          </div>
+          <!-- <div class="swiper-pagination"></div> -->
       </div>
  </section>
-<div class="container">
+<!-- <div class="container">
     <img src="/images/image1.jpg">
-</div>
+</div> -->
 
-<section class="slider"> 
-<ul class="sliderContainer" id="slides-container">
-  <button class="slide-arrow"  id="slide-arrow-left"></button>
-  <li class="slide"><img src="/images/img2.jpeg"></li>
-  <li class="slide"><img src="/images/image1.jpg"></li>
-  <li class="slide"><img src="image1.jpg"></li>
-  <li class="slide"><img src="image1.jpg"></li>
-  <button class="slide-arrow"  id="slide-arrow-right"></button>
-</ul>
-</section>
 
 <script src="events.js"></script>
   </body> 
