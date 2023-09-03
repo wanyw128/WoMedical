@@ -1,5 +1,6 @@
 *{
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
 body{
@@ -567,6 +568,145 @@ nav li::selection, nav a::selection{
 .socials a:hover{
     color: #ba6f68;
     transition: color 0.5s ease-in-out;
+}
+
+.partners-div {
+  margin: 2rem 3rem 0rem 3rem;
+  padding: 6rem 0rem 5rem 0rem;
+}
+
+.partners-div h2 {
+  text-align: center;
+  font-size: 5rem;
+  font-family: "Fjalla One", sans-serif;
+  margin-bottom: 0;
+}
+
+.partners-div h3 {
+  font-size: 4rem;
+  font-family: "Fjalla One", sans-serif;
+  margin-top: 5rem;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.sheltersSlideshow,
+.companiesSlideshow,
+.librariesSlideshow {
+  display: none;
+}
+
+.partners-prev,
+.partners-next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.partners-next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.partners-prev:hover,
+.partners-next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.partners-prev, .partners-next {
+  top: 50%;
+  position: absolute;
+}
+
+.image-container {
+  position: relative;
+}
+
+.numOf {
+  color: #2C3E50;
+  font-family: "Merriweather", serif;
+  font-size: 1.5rem;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.slideshowImg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.caption {
+  color: #2C3E50;
+  background: rgba( 123, 125, 126, .4);
+  position: absolute;
+  /* background-color: #7B7D7E; */
+  font-family: "Merriweather", serif;
+  font-size: 1.6rem;
+  padding: 8px 12px;
+  width: 100%;
+  text-align: center;
+}
+
+.partners-dropdown {
+  position: relative;
+}
+
+.dropdownArrow {
+  cursor: pointer;
+  padding-left: 10px;
+  position: absolute;
+}
+
+.partners-dropdownContent {
+  display: none;
+  position: relative;
+  padding-top: 20px;
+  /* z-index: 1; */
+  margin-bottom: 0;
+}
+
+.partners-dropdownContent p {
+  display: block;
+  padding: 5%;
+  background: rgba( 123, 125, 126, .6);
+  font-family: "Merriweather", serif;
+  font-size: 1.6rem;
+}
+
+.show {
+  display: block;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
 }
 
 footer{
