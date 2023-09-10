@@ -62,3 +62,42 @@ function closeIssue3(){
     document.getElementById("issues-content-3").style.display = "none";
     document.getElementById("issues-close-btn-3").style.display = "none";
 }
+
+let slideIndex = [0,1];
+let slideId = ["sheltersSlideshow", "companiesSlideshow", "librariesSlideshow"]
+showSlides(0, 0);
+showSlides(0, 1);
+showSlides(0, 2);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  let i;
+  let slides = document.getElementsByClassName(slideId[no]);
+  if (n > slides.length) {slideIndex[no] = 1}
+  if (n < 1) {slideIndex[no] = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+slides[slideIndex[no]-1].style.display = "block";
+}
+
+function drop(name) {
+document.getElementById(name).classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropdownArrow')) {
+    var dropdowns = document.getElementsByClassName("partners-dropdownContent");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
