@@ -63,7 +63,7 @@ function closeIssue3(){
     document.getElementById("issues-close-btn-3").style.display = "none";
 }
 
-let slideIndex = [1,1];
+let slideIndex = [0,1];
 let slideId = ["sheltersSlideshow", "companiesSlideshow", "librariesSlideshow"]
 showSlides(0, 0);
 showSlides(0, 1);
