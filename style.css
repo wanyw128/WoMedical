@@ -116,6 +116,8 @@ nav a::selection {
   font-size: 4em;
   color: #D65043;
   max-width: 75%;
+  font-weight: normal;
+  margin: 0px 0px 8px 0px;
 }
 
 .slogan-div h1::selection {
@@ -124,6 +126,13 @@ nav a::selection {
 
 .slogan-div h1:hover {
   cursor: default;
+}
+
+.slogan-div h5 {
+  font-family: 'Libre Baskerville';
+  font-size: 1.2em;
+  font-weight: normal;
+  margin: 0px 0px 8px 0px;
 }
 
 .slogan-div h5::selection {
@@ -174,6 +183,8 @@ nav a::selection {
   text-transform: uppercase;
   text-align: center;
   font-size: 3em;
+  font-weight: normal;
+  margin: 0px 0px 8px 0px;
 }
 
 .home-mission-div h2:hover {
@@ -188,6 +199,8 @@ nav a::selection {
   width: 95%;
   font-size: 1em;
   text-indent: 5%;
+  line-height: 1.5;
+  margin: 0px 0px 8px 0px;
 }
 
 .home-mission-div p::selection {
@@ -240,6 +253,7 @@ nav a::selection {
   margin: auto;
   font-size: 2.5em;
   text-transform: uppercase;
+  font-weight: normal;
 }
 
 .updates-subcontainer h2:hover,
@@ -329,6 +343,9 @@ nav a::selection {
   text-align: center;
   font-family: "Fjalla One", sans-serif;
   margin-top: 5%;
+  font-weight: 550;
+  font-size: 1.7em;
+  margin: 0px 0px 8px 0px;
 }
 
 .news-caption a,
@@ -363,6 +380,8 @@ updates-subcontainer p::selection {
 
 .issues-container h2 {
   font-size: 5rem;
+  font-weight: normal;
+  margin: 0px 0px 8px 0px;
 }
 
 .issues-dropdown {
@@ -386,6 +405,7 @@ updates-subcontainer p::selection {
   display: inline;
   font-size: 2em;
   font-family: "Merriweather";
+  font-weight: normal;
 }
 
 .issues-dropdown-btn {
@@ -488,6 +508,13 @@ updates-subcontainer p::selection {
 
 .involved-div h2 {
   font-size: 5rem;
+  font-weight: normal;
+  margin: 0px 0px 8px 0px;
+}
+
+.involved-div h3 {
+  font-weight: normal;
+  margin: 0px 0px 8px 0px;
 }
 
 .involved-div a {
@@ -603,8 +630,8 @@ updates-subcontainer p::selection {
 }
 
 .partners-div {
-  margin: 2rem 3rem 0rem 3rem;
-  padding: 6rem 0rem 5rem 0rem;
+  margin: 25px 100px 0px 100px;
+  padding: 20px 0px 80px 0px;
 }
 
 .partners-div h2 {
@@ -612,12 +639,14 @@ updates-subcontainer p::selection {
   font-size: 5rem;
   font-family: "Fjalla One", sans-serif;
   margin-bottom: 0;
+  font-weight: normal;
 }
 
 .partners-div h3 {
   font-size: 4rem;
   font-family: "Fjalla One", sans-serif;
   margin-top: 5rem;
+  font-weight: normal;
 }
 
 .slideshow-container {
