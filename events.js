@@ -20,3 +20,7 @@ photoContainers.forEach(container => {
       this.classList.toggle('expanded');
     });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+  document.body.style.overflow = "auto"; // Enable scrolling
+});
