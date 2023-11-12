@@ -24,3 +24,7 @@ photoContainers.forEach(container => {
 document.addEventListener("DOMContentLoaded", function() {
   document.body.style.overflow = "auto"; // Enable scrolling
 });
+
+
+
+
