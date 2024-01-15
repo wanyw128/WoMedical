@@ -43,20 +43,21 @@ nav {
   font-family: 'Roboto', sans-serif;
 }
 
-.open-nav {
-  display: block;
-  background-color: transparent;
-  border: none;
-  font-size: 2.5em;
-  color: black;
-  ;
-  position: fixed;
-  left: 0;
-  top: 0;
-  margin: 1%;
-  z-index: 3;
-  width: 1em;
-  height: 1em;
+.open-nav{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    font-size: 2.5em;
+    color: black;;
+    position: fixed;
+    left: 0;
+    top: 0;
+    margin: 1%;
+    z-index: 3;
+    width: 1em;
+    height: 80px;
 }
 
 .open-nav:active,
