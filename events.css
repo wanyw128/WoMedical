@@ -276,3 +276,97 @@
     height: 45vw;
     background-color: #eae5e2;
   }
+
+/* Media queries */
+
+/* Desktops */
+@media screen and (max-width: 1200px) {
+  .header {
+    height: 7vw;
+  }
+
+  #testtt {
+    font-size: 4vw;
+  }
+
+  .time-line-box {
+    padding: 13vw 0;
+  }
+
+  .time-line-box .timestamp {
+    font-size: 2vw;
+  }
+
+  .time-line-box .status {
+    font-size: 2.1vw;
+  }
+}
+
+/* Laptops */
+@media screen and (max-width: 992px) {
+  .header {
+    height: 7.5vw;
+  }
+
+  #testtt {
+    font-size: 4vw;
+  }
+
+  .time-line-box {
+    padding: 10vw 0;
+  }
+
+  .time-line-box .timestamp {
+    font-size: 1.7vw;
+  }
+
+  .time-line-box .status {
+    font-size: 1.9vw;
+  }
+}
+
+/* Tablets */
+@media screen and (max-width: 768px) {
+  .header {
+    height: 9vw;
+  }
+
+  #testtt {
+    font-size: 5vw;
+  }
+
+  .time-line-box {
+    padding: 10vw 0;
+  }
+
+  .time-line-box .timestamp {
+    font-size: 2vw;
+  }
+
+  .time-line-box .status {
+    font-size: 2.3vw;
+  }
+}
+
+/* Phones */
+@media screen and (max-width: 480px) {
+  .header {
+    height: 9vw;
+  }
+
+  #testtt {
+    font-size: 5vw;
+  }
+
+  .time-line-box {
+    padding: 10vw 0;
+  }
+
+  .time-line-box .timestamp {
+    font-size: 2vw;
+  }
+
+  .time-line-box .status {
+    font-size: 2.3vw;
+  }
+}
