@@ -43,21 +43,22 @@ nav {
   font-family: 'Roboto', sans-serif;
 }
 
-.open-nav{
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    background-color: transparent;
-    border: none;
-    font-size: 2.5em;
-    color: black;;
-    position: fixed;
-    left: 0;
-    top: 0;
-    margin: 1%;
-    z-index: 3;
-    width: 1em;
-    height: 80px;
+.open-nav {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  font-size: 2.5em;
+  color: black;
+  ;
+  position: fixed;
+  left: 0;
+  top: 0;
+  margin: 1%;
+  z-index: 3;
+  width: 1em;
+  height: 80px;
 }
 
 .open-nav:active,
@@ -813,7 +814,7 @@ footer li {
   }
 
   /* Desktops */
-  @media screen and (max-width: 1200px) {
+  @media screen and (min-width: 993px) and (max-width: 1200px) {
     .partners-div h2 {
       font-size: 6rem;
     }
@@ -838,7 +839,7 @@ footer li {
   }
 
   /* Laptops */
-  @media screen and (max-width: 992px) {
+  @media screen and (min-width: 769px) and (max-width: 992px) {
     .partners-div h2 {
       margin-top: 1rem;
     }
@@ -849,7 +850,7 @@ footer li {
   }
 
   /* Tablets */
-  @media screen and (max-width: 768px) {
+  @media screen and (min-width: 481px) and (max-width: 768px) {
     .partners-div h2 {
       margin-top: 1rem;
       font-size: 4rem;
@@ -905,6 +906,7 @@ footer li {
 
     .partners-dropdownContent {
       top: -16px;
+      padding-bottom: 30px;
     }
 
     .partners-prev,
