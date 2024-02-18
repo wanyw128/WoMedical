@@ -280,7 +280,7 @@
 /* Media queries */
 
 /* Desktops */
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 993px) and (max-width: 1200px) {
   .header {
     height: 7vw;
   }
@@ -303,7 +303,7 @@
 }
 
 /* Laptops */
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 769px) and (max-width: 992px) {
   .header {
     height: 7.5vw;
   }
@@ -326,7 +326,7 @@
 }
 
 /* Tablets */
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
   .header {
     height: 9vw;
   }
@@ -351,11 +351,16 @@
 /* Phones */
 @media screen and (max-width: 480px) {
   .header {
-    height: 9vw;
+    height: 12vw;
+    padding-bottom: 12vw;
   }
 
   #testtt {
-    font-size: 5vw;
+    font-size: 7vw;
+  }
+
+  .swiper-container {
+    padding-top: 20px;
   }
 
   .time-line-box {
@@ -363,10 +368,10 @@
   }
 
   .time-line-box .timestamp {
-    font-size: 2vw;
+    font-size: 3vw;
   }
 
   .time-line-box .status {
-    font-size: 2.3vw;
+    font-size: 2.9vw;
   }
 }

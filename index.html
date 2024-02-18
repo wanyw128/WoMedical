@@ -6,7 +6,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
   <link href='https://fonts.googleapis.com/css?family=Libre Baskerville' rel='stylesheet'>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
@@ -19,53 +20,53 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fjalla+One|Libre+Baskerville">
 </head>
 
-  <body>
-    <heading>
-      <button class="open-nav" onclick="toggleNav()"><i class="fa-solid fa-bars"></i></button>
-    </heading>
-    <nav id="nav">
-      <ul>
-        <li>
-          <a href="index.html">HOME</a>
-        </li>
-        <li>ABOUT</li>
-        <li>
-          <ul>
-            <li>
-              <a href="about-us.html">ABOUT US</a>
-            </li>
-            <li>
-              <a href="about-womens-health.html">ABOUT WOMEN'S HEALTH</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="issues.html">ISSUES</a>
-        </li>
-        <li>
-          <a href="news.html">NEWS</a>
-        </li>
-        <li>OUR EVENTS</li>
-        <li>
-          <ul>
-            <li>
-              <a href="events.html" class="еvent-archive">EVENTS ARCHIVE</a>
-            </li>
-            <li>
-              <a href="calendar.html">EVENTS CALENDAR</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="get-involved.html">GET INVOLVED</a>
-        </li>
-        <li class="nav-socials">
-          <a href="https://www.instagram.com/womedical/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-          <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-          <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-        </li>
-      </ul>
-    </nav> 
+<body>
+  <heading>
+    <button class="open-nav" onclick="toggleNav()"><i class="fa-solid fa-bars"></i></button>
+  </heading>
+  <nav id="nav">
+    <ul>
+      <li>
+        <a href="index.html">HOME</a>
+      </li>
+      <li>ABOUT</li>
+      <li>
+        <ul>
+          <li>
+            <a href="about-us.html">ABOUT US</a>
+          </li>
+          <li>
+            <a href="about-womens-health.html">ABOUT WOMEN'S HEALTH</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="issues.html">ISSUES</a>
+      </li>
+      <li>
+        <a href="news.html">NEWS</a>
+      </li>
+      <li>OUR EVENTS</li>
+      <li>
+        <ul>
+          <li>
+            <a href="events.html" class="еvent-archive">EVENTS ARCHIVE</a>
+          </li>
+          <li>
+            <a href="calendar.html">EVENTS CALENDAR</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="get-involved.html">GET INVOLVED</a>
+      </li>
+      <li class="nav-socials">
+        <a href="https://www.instagram.com/womedical/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      </li>
+    </ul>
+  </nav>
 
   <main>
     <section class="home-div">
@@ -398,8 +399,8 @@
           <div class="numOf">1 / 10</div>
           <div class="image-container">
             <img src="Logos/TillaryStreet_Img.png" class="slideshowImg">
-            <a class="partners-prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-            <a class="partners-next" onclick="plusSlides(1, 0)">&#10095;</a>
+            <a class="partners-prev" id="TillaryStreetp" onclick="plusSlides(-1, 0)">&#10094;</a>
+            <a class="partners-next" id="TillaryStreetn" onclick="plusSlides(1, 0)">&#10095;</a>
           </div>
           <div class="partners-dropdown">
             <div class="caption">Tillary Street Women's Shelter
@@ -418,8 +419,8 @@
           <div class="numOf">2 / 10</div>
           <div class="image-container">
             <img src="Logos/BoweryMission_Logo.jpg" class="slideshowImg">
-            <a class="partners-prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-            <a class="partners-next" onclick="plusSlides(1, 0)">&#10095;</a>
+            <a class="partners-prev" id="BoweryMissionp" onclick="plusSlides(-1, 0)">&#10094;</a>
+            <a class="partners-next" id="BoweryMissionn" onclick="plusSlides(1, 0)">&#10095;</a>
           </div>
           <div class="partners-dropdown">
             <div class="caption">The Bowery Mission - Flagship Campus
@@ -437,8 +438,8 @@
           <div class="numOf">3 / 10</div>
           <div class="image-container">
             <img src="Logos/DwellingPlace_Logo.png" class="slideshowImg">
-            <a class="partners-prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-            <a class="partners-next" onclick="plusSlides(1, 0)">&#10095;</a>
+            <a class="partners-prev" id="DwellingPlacep" onclick="plusSlides(-1, 0)">&#10094;</a>
+            <a class="partners-next" id="DwellingPlacen" onclick="plusSlides(1, 0)">&#10095;</a>
           </div>
           <div class="partners-dropdown">
             <div class="caption">The Dwelling Place Women's
@@ -456,8 +457,8 @@
           <div class="numOf">4 / 10</div>
           <div class="image-container">
             <img src="Logos/KensingtonFamily_Img.png" class="slideshowImg">
-            <a class="partners-prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-            <a class="partners-next" onclick="plusSlides(1, 0)">&#10095;</a>
+            <a class="partners-prev" id="Kensingtonp" onclick="plusSlides(-1, 0)">&#10094;</a>
+            <a class="partners-next" id="Kensingtonn" onclick="plusSlides(1, 0)">&#10095;</a>
           </div>
           <div class="partners-dropdown">
             <div class="caption">The Kensington Family Shelter
@@ -474,8 +475,8 @@
           <div class="numOf">5 / 10</div>
           <div class="image-container">
             <img src="Logos/LenoxHill_Logo.jpg" class="slideshowImg">
-            <a class="partners-prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-            <a class="partners-next" onclick="plusSlides(1, 0)">&#10095;</a>
+            <a class="partners-prev" id="LenoxHillp" onclick="plusSlides(-1, 0)">&#10094;</a>
+            <a class="partners-next" id="LenoxHilln" onclick="plusSlides(1, 0)">&#10095;</a>
           </div>
           <div class="partners-dropdown">
             <div class="caption">Lenox Hill Women's Health Shelter
@@ -495,8 +496,8 @@
           <div class="numOf">6 / 10</div>
           <div class="image-container">
             <img src="Logos/CPC_Logo.png" class="slideshowImg">
-            <a class="partners-prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-            <a class="partners-next" onclick="plusSlides(1, 0)">&#10095;</a>
+            <a class="partners-prev" id="CPCp" onclick="plusSlides(-1, 0)">&#10094;</a>
+            <a class="partners-next" id="CPCn" onclick="plusSlides(1, 0)">&#10095;</a>
           </div>
           <div class="partners-dropdown">
             <div class="caption">Chinese-American Planning Council Queens Community Center
@@ -514,8 +515,8 @@
           <div class="numOf">7 / 10</div>
           <div class="image-container">
             <img src="Logos/Kyofukai_Logo.png" class="slideshowImg">
-            <a class="partners-prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-            <a class="partners-next" onclick="plusSlides(1, 0)">&#10095;</a>
+            <a class="partners-prev" id="KYOFUKAIp" onclick="plusSlides(-1, 0)">&#10094;</a>
+            <a class="partners-next" id="KYOFUKAIn" onclick="plusSlides(1, 0)">&#10095;</a>
           </div>
           <div class="partners-dropdown">
             <div class="caption">KYOFUKAI - Japan Christian Women’s Organization
@@ -535,8 +536,8 @@
           <div class="numOf">8 / 10</div>
           <div class="image-container">
             <img src="Logos/ProjectRenewal_Logo.png" class="slideshowImg">
-            <a class="partners-prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-            <a class="partners-next" onclick="plusSlides(1, 0)">&#10095;</a>
+            <a class="partners-prev" id="ProjectRenewalp" onclick="plusSlides(-1, 0)">&#10094;</a>
+            <a class="partners-next" id="ProjectRenewaln" onclick="plusSlides(1, 0)">&#10095;</a>
           </div>
           <div class="partners-dropdown">
             <div class="caption">PROJECT RENEWAL NEW PROVIDENCE WOMEN’S SHELTER
@@ -554,8 +555,8 @@
           <div class="numOf">9 / 10</div>
           <div class="image-container">
             <img src="Logos/KUMFA_Logo.jpg" class="slideshowImg">
-            <a class="partners-prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-            <a class="partners-next" onclick="plusSlides(1, 0)">&#10095;</a>
+            <a class="partners-prev" id="KUMFAp" onclick="plusSlides(-1, 0)">&#10094;</a>
+            <a class="partners-next" id="KUMFAn" onclick="plusSlides(1, 0)">&#10095;</a>
           </div>
           <div class="partners-dropdown">
             <div class="caption">KOREAN UNWED MOTHERS’ FAMILIES ASSOCIATION
@@ -573,8 +574,8 @@
           <div class="numOf">10 / 10</div>
           <div class="image-container">
             <img src="Logos/GeorgeDalyHouse_Logo.jpg" class="slideshowImg">
-            <a class="partners-prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-            <a class="partners-next" onclick="plusSlides(1, 0)">&#10095;</a>
+            <a class="partners-prev" id="GeorgeDalyp" onclick="plusSlides(-1, 0)">&#10094;</a>
+            <a class="partners-next" id="GeorgeDalyn" onclick="plusSlides(1, 0)">&#10095;</a>
           </div>
           <div class="partners-dropdown">
             <div class="caption">George Daly House
@@ -599,8 +600,8 @@
           <div class="numOf">1 / 2</div>
           <div class="image-container">
             <img src="Logos/AuntFlow_Logo.png" class="slideshowImg">
-            <a class="partners-prev" onclick="plusSlides(-1, 1)">&#10094;</a>
-            <a class="partners-next" onclick="plusSlides(1, 1)">&#10095;</a>
+            <a class="partners-prev" id="AuntFlowp" onclick="plusSlides(-1, 1)">&#10094;</a>
+            <a class="partners-next" id="AuntFlown" onclick="plusSlides(1, 1)">&#10095;</a>
           </div>
           <div class="partners-dropdown">
             <div class="caption">Aunt Flow
@@ -618,8 +619,8 @@
           <div class="numOf">2 / 2</div>
           <div class="image-container">
             <img src="Logos/Knix_Logo.jpg" class="slideshowImg">
-            <a class="partners-prev" onclick="plusSlides(-1, 1)">&#10094;</a>
-            <a class="partners-next" onclick="plusSlides(1, 1)">&#10095;</a>
+            <a class="partners-prev" id="Knixp" onclick="plusSlides(-1, 1)">&#10094;</a>
+            <a class="partners-next" id="Knixn" onclick="plusSlides(1, 1)">&#10095;</a>
           </div>
           <div class="partners-dropdown">
             <div class="caption">Knix
@@ -643,8 +644,8 @@
           <div class="numOf">1 / 2</div>
           <div class="image-container">
             <img src="Logos/BrookylnPL_Logo.jpg" class="slideshowImg">
-            <a class="partners-prev" onclick="plusSlides(-1, 2)">&#10094;</a>
-            <a class="partners-next" onclick="plusSlides(1, 2)">&#10095;</a>
+            <a class="partners-prev" id="BPLp" onclick="plusSlides(-1, 2)">&#10094;</a>
+            <a class="partners-next" id="BPLn" onclick="plusSlides(1, 2)">&#10095;</a>
           </div>
           <div class="partners-dropdown">
             <div class="caption">Brooklyn Public Library - Dyker Branch
@@ -662,8 +663,8 @@
           <div class="numOf">2 / 2</div>
           <div class="image-container">
             <img src="Logos/NYPL_Logo.jpg" class="slideshowImg">
-            <a class="partners-prev" onclick="plusSlides(-1, 2)">&#10094;</a>
-            <a class="partners-next" onclick="plusSlides(1, 2)">&#10095;</a>
+            <a class="partners-prev" id="NYPLp" onclick="plusSlides(-1, 2)">&#10094;</a>
+            <a class="partners-next" id="NYPLn" onclick="plusSlides(1, 2)">&#10095;</a>
           </div>
           <div class="partners-dropdown">
             <div class="caption">New York Public Library - Hamilton Fish Park Advances
@@ -703,18 +704,18 @@
       </div>
       <div>
         <h5>WoMedical Updates</h5>
-          <ul>
-            </li>
-            <li>
-              <a href="index.html">News</a>
-            </li>
-            <li>
-              <a href="EA.html">Events Archive</a>
-            </li>
-            <li>
-              <a href="index.html">Events Calendar</a>
-            </li>
-          </ul>
+        <ul>
+          </li>
+          <li>
+            <a href="index.html">News</a>
+          </li>
+          <li>
+            <a href="EA.html">Events Archive</a>
+          </li>
+          <li>
+            <a href="index.html">Events Calendar</a>
+          </li>
+        </ul>
       </div>
       <div>
         <h5>All About Women's Health</h5>
